@@ -1,3 +1,3 @@
 git add --all
-git commit -m "upgrade people page readion people.json"
+git commit -m "web site upload"
 git push -u origin master
