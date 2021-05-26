@@ -1,3 +1,3 @@
 git add --all
-git commit -m "web site upload6"
+git commit -m "web site upload7"
 git push -u origin master

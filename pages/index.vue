@@ -33,7 +33,7 @@
             반팔, 얇은 셔츠, 반바지, 면바지
           </div>
           <div class="message-header">
-            22ºC ~ 20ºC 이상
+            22ºC ~ 20ºC
           </div>
           <div class="message-body">
             <figure class="image is-3by1">
