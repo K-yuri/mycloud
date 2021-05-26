@@ -19,6 +19,20 @@
           <div class="message-body">
             민소매, 반팔, 반바지, 짧은 치마, 린넨 옷
           </div>
+
+          <div class="message-header">
+            27ºC ~ 23ºC
+          </div>
+          <div class="message-body">
+            반팔, 얇은 셔츠, 반바지, 면바지
+          </div>
+
+          <div class="message-header">
+            22ºC ~ 20ºC 이상
+          </div>
+          <div class="message-body">
+            얇은 가디건, 긴팔, 면바지, 청바지
+          </div>
         </article>
       </div>
     </div>
