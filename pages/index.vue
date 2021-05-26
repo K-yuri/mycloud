@@ -3,10 +3,10 @@
     <section class="hero is-primary">
       <div class="hero-body">
       <p class="title">
-       <i class="fas fa-dog"></i>강아지와 <i class="fas fa-cat"></i>고양이의 동행
+       <i class="fas fa-dog"></i>기온별 옷차림<i class="fas fa-cat"></i>
       </p>
       <p class="subtitle">
-        강아지와 고양이에 대한 모든 정보를 볼 수 있는 곳
+        계절과 기온에 따른 적당한 옷차림에 대해 설명하는 곳
       </p>
       </div>
     </section>
@@ -14,10 +14,10 @@
       <div class="column">
         <article class="message">
           <div class="message-header">
-            강아지(Dog) 정보
+            28ºC 이상
           </div>
           <div class="message-body">
-            멍멍
+            민소매, 반팔, 반바지, 짧은 치마, 린넨 옷
           </div>
         </article>
       </div>
