@@ -3,7 +3,7 @@
     <section class="hero is-primary">
       <div class="hero-body">
       <p class="title">
-       <i class="fas fa-dog"></i>기온별 옷차림<i class="fas fa-cat"></i>
+       <i class="fa-solid fa-temperature-three-quarters" />기온별 <i class="fa-solid fa-clothes-hanger" />옷차림
       </p>
       <p class="subtitle">
         계절과 기온에 따른 적당한 옷차림에 대해 설명하는 곳
