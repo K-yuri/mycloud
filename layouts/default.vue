@@ -36,6 +36,13 @@
     </li>
   </ul>
 </nav>
+        <nav class="breadcrumb">
+            <ul>
+                <li>
+                    <nuxt-link to="/clothesDesing"><i class="fas fa-file-signature"></i>&nbsp;옷 추천</nuxt-link>
+                </li>
+            </ul>
+        </nav>
     <nuxt/>
     <footer class="footer">
       <div class="content has-text-centered">

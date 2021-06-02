@@ -14,6 +14,7 @@
     <div class="columns">
       <div class="column">
         <article class="message">
+
           <div class="message-header">
            28ºC 이상
           </div>
@@ -23,6 +24,7 @@
               </figure>
             민소매, 반팔, 반바지, 짧은 치마, 린넨 옷
           </div>
+
           <div class="message-header">
             27ºC ~ 23ºC
           </div>
@@ -51,6 +53,36 @@
               </figure>
             얇은 니트, 맨투맨, 가디건, 청바지
           </div>
+
+          <article class="notification">
+      <table class="table is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <td>여름옷</td>
+            <td>의류 정보</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>상의</td>
+            <td>민소매, 반팔, 린넨, 얇은 셔츠</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>하의</td>
+            <td>반바지, 짧은 치마, 반바지, 면바지, 청바지</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="is-selected">
+            <td>겉옷</td>
+            <td>얇은 가디건, 긴팔 셔츠</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
         </article>
       </div>
 
@@ -95,40 +127,8 @@
               </figure>
             패딩, 두꺼운 코트, 목도리, 기모제품
           </div>
-        </article>
-      </div>
-    </div>
 
-    <article class="notification">
-      <table class="table is-striped is-hoverable is-fullwidth">
-        <thead>
-          <tr>
-            <td>여름옷</td>
-            <td>의류 정보</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>상의</td>
-            <td>민소매, 반팔, 린넨, 얇은 셔츠</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>하의</td>
-            <td>반바지, 짧은 치마, 반바지, 면바지, 청바지</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr class="is-selected">
-            <td>겉옷</td>
-            <td>얇은 가디건, 긴팔 셔츠</td>
-          </tr>
-        </tbody>
-      </table>
-    </article>
-
-    <article class="notification">
+          <article class="notification">
       <table class="table is-striped is-hoverable is-fullwidth">
         <thead>
           <tr>
@@ -156,5 +156,13 @@
         </tbody>
       </table>
     </article>
+    
+        </article>
+      </div>
+    </div>
+
+    
+
+    
   </div>
 </template>

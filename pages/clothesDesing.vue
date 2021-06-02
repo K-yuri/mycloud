@@ -1,0 +1,53 @@
+<template>
+    <div>
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <p class="title">
+                    <i class="fas fa-temperature-high"/>기온별 <i class="fas fa-list-ul"/>옷차림
+                </p>
+                <p class="subtitle">
+                간편하게 옷을 추천받아보세요.
+                </p>
+            </div>
+        </section>
+        <section class="columes">
+            <div class="colume">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>옷 추천</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template v-for="pos in tableClothes.length">
+                            <tr :key="pos">
+                            <td>{{pos}}</td>
+                            <td>{{tableClothes[pos - 1]}}</td>
+                        </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+            <div class="content">
+                <span class="teg is-danger">출처</span>
+                <a href="https://github.com/dariusk/corpora/blob/master/data/objects/clothing.json"
+                >dariusk/corpora</a>
+            </div>
+            <div class="content">
+                <span class="teg is-danger">JSON</span>
+                <nuxt-link to="~/asset/clothes.json">옷 추천을 위한 JSON</nuxt-link>
+            </div>
+        </section>
+    </div>
+</template>
+
+<script>
+import clothes from "~/assets/clothes.json";
+
+export default {
+    data() {
+        return { tableClothes: clothes };
+    }
+};
+</script>
