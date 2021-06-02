@@ -10,7 +10,7 @@
       </p>
       </div>
     </section>
-    
+
     <div class="columns">
       <div class="column">
         <article class="message">
@@ -100,7 +100,7 @@
     </div>
 
     <article class="notification">
-      <table class="table is-striped id-hoverable is-fullwidth">
+      <table class="table is-striped is-hoverable is-fullwidth">
         <thead>
           <tr>
             <td>여름옷</td>
@@ -110,26 +110,26 @@
         <tbody>
           <tr>
             <td>상의</td>
-            <td>티셔츠</td>
+            <td>민소매, 반팔, 린넨, 얇은 셔츠</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
             <td>하의</td>
-            <td>바지</td>
+            <td>반바지, 짧은 치마, 반바지, 면바지, 청바지</td>
           </tr>
         </tbody>
         <tbody>
           <tr class="is-selected">
-            <td>반팔</td>
-            <td>얇은 옷</td>
+            <td>겉옷</td>
+            <td>얇은 가디건, 긴팔 셔츠</td>
           </tr>
         </tbody>
       </table>
     </article>
 
     <article class="notification">
-      <table class="table is-striped id-hoverable is-fullwidth">
+      <table class="table is-striped is-hoverable is-fullwidth">
         <thead>
           <tr>
             <td>겨울옷</td>
@@ -139,19 +139,19 @@
         <tbody>
           <tr>
             <td>상의</td>
-            <td>티셔츠</td>
+            <td>긴팔, 맨투맨, 니트, 히트텍, 기모 제품</td>
           </tr>
         </tbody>
         <tbody>
           <tr>
             <td>하의</td>
-            <td>바지</td>
+            <td>청바지, 면바지, 스타킹, 레깅스</td>
           </tr>
         </tbody>
         <tbody>
           <tr class="is-selected">
-            <td>패딩</td>
-            <td>두꺼운 옷</td>
+            <td>겉옷</td>
+            <td>자켓, 트렌치코트, 야상, 가죽 자켓, 패딩, 두꺼운 코트, 목도리</td>
           </tr>
         </tbody>
       </table>
