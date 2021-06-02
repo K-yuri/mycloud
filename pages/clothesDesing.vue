@@ -1,18 +1,19 @@
 <template>
     <div>
-        <section class="hero is-primary">
+        <section class="hero is-link">
             <div class="hero-body">
                 <p class="title">
-                    <i class="fas fa-temperature-high"/>기온별 <i class="fas fa-list-ul"/>옷차림
+                    <i class="fas fa-temperature-high"/>옷차림 <i class="fas fa-list-ul"/>추천
                 </p>
                 <p class="subtitle">
                 간편하게 옷을 추천받아보세요.
                 </p>
             </div>
         </section>
+        <hr />
         <section class="columes">
             <div class="colume">
-                <table class="table">
+                <table class="table is-striped is-hoverable is-fullwidth">
                     <thead>
                         <tr>
                             <th>번호</th>
@@ -22,9 +23,9 @@
                     <tbody>
                         <template v-for="pos in tableClothes.length">
                             <tr :key="pos">
-                            <td>{{pos}}</td>
-                            <td>{{tableClothes[pos - 1]}}</td>
-                        </tr>
+                            <td>{{ pos }}</td>
+                            <td>{{ tableClothes[pos - 1] }}</td>
+                            </tr>
                         </template>
                     </tbody>
                 </table>
