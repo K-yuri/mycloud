@@ -11,8 +11,8 @@
             </div>
         </section>
         <hr />
-        <section class="columes">
-            <div class="colume">
+        <section class="columns">
+            <div class="column">
                 <table class="table is-striped is-hoverable is-fullwidth">
                     <thead>
                         <tr>
