@@ -29,3 +29,13 @@
     </div>
 </template>
 
+<script>
+import clothes from "~/assets/clothes.json";
+
+export default {
+    data() {
+        return { tableClothes: clothes.clothes };
+    }
+};
+</script>
+
