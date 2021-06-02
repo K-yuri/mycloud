@@ -21,12 +21,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <template v-for="pos in tableClothes.length">
-                            <tr :key="pos">
-                            <td>{{ pos }}</td>
-                            <td>{{ tableClothes[pos - 1] }}</td>
-                            </tr>
-                        </template>
+                        
                     </tbody>
                 </table>
             </div>
