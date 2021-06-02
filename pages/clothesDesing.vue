@@ -40,11 +40,11 @@
 </template>
 
 <script>
-import Clothes from "~/assets/clothes.json";
+import clothes from "~/assets/clothes.json";
 
 export default {
     data() {
-        return { tableClothes: Clothes.clothes };
+        return { tableClothes: clothes.clothes };
     }
 };
 </script>
