@@ -2,7 +2,7 @@
     "name": "mycloud1",
     "version": "1.0.0",
     "description": "1860013",
-    "author": "",
+    "author": "K-yuri <dbfl2989@mokwon.ac.kr>",
     "private": true,
     "scripts": {
         "dev": "nuxt",

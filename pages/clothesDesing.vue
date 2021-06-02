@@ -35,10 +35,6 @@
                 <a href="https://github.com/dariusk/corpora/blob/master/data/objects/clothing.json"
                 >dariusk/corpora</a>
             </div>
-            <div class="content">
-                <span class="teg is-danger">JSON</span>
-                <nuxt-link to="~/asset/clothes.json">옷 추천을 위한 JSON</nuxt-link>
-            </div>
         </section>
     </div>
 </template>
