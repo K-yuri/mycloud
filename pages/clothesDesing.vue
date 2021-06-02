@@ -48,7 +48,7 @@ import clothes from "~/assets/clothes.json";
 
 export default {
     data() {
-        return { tableClothes: clothes };
+        return { tableClothes: clothes.clothes };
     }
 };
 </script>
