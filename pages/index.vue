@@ -10,8 +10,8 @@
       </p>
       </div>
     </section>
+    
     <div class="columns">
-
       <div class="column">
         <article class="message">
           <div class="message-header">
@@ -98,5 +98,63 @@
         </article>
       </div>
     </div>
+
+    <article class="notification">
+      <table class="table is-striped id-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <td>여름옷</td>
+            <td>의류 정보</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>상의</td>
+            <td>티셔츠</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>하의</td>
+            <td>바지</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="is-selected">
+            <td>반팔</td>
+            <td>얇은 옷</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article class="notification">
+      <table class="table is-striped id-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <td>겨울옷</td>
+            <td>의류 정보</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>상의</td>
+            <td>티셔츠</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>하의</td>
+            <td>바지</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="is-selected">
+            <td>패딩</td>
+            <td>두꺼운 옷</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
   </div>
 </template>
