@@ -1,3 +1,3 @@
 git add --all
-git commit -m "new table page1"
+git commit -m "한글화를 검증하기 위한 commit"
 git push -u origin master
