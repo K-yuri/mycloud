@@ -2,7 +2,14 @@
 
 > 1860013
 
-## Build Setup
+# Domain
+
+https://www.mycloud11.cf/
+
+https://weatherclothes.netlify.app/
+
+
+# Build Setup
 
 ``` bash
 # install dependencies

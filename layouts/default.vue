@@ -42,7 +42,7 @@
                     <nuxt-link to="/clothesDesing"><i class="fas fa-file-signature"></i>&nbsp;옷 추천</nuxt-link>
                 </li>
                 <li>
-                    <nuxt-link to="/dogbreeze"><i class="fas fa-file-signature"></i>&nbsp;강아지 품종</nuxt-link>
+                    <nuxt-link to="/shoppingmall"><i class="fas fa-file-signature"></i>&nbsp;쇼핑몰 목록</nuxt-link>
                 </li>
             </ul>
         </nav>
