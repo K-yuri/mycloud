@@ -3,10 +3,10 @@
         <section class="hero is-link">
             <div class="hero-body">
                 <p class="title">
-                    <i class="fas fa-temperature-high"/>인터넷<i class="fas fa-list-ul"/>쇼핑몰
+                    <i class="fas fa-temperature-high"/>오늘의<i class="fas fa-list-ul"/>날씨
                 </p>
                 <p class="subtitle">
-                다양한 옷을 구매할 수 있는 곳들을 살펴봅시다.
+                날씨를 미리 살피고 기온에 맞는 옷을 입읍시다.
                 </p>
             </div>
         </section>
@@ -81,15 +81,15 @@
 	import axios from 'axios';
 	export default {
 		async asyncData() {
-			const dogBreeds = await axios.get('https://dog.ceo/api/breeds/list/all');
+			const dogBreeds = await axios.get('http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=28982191e068cf8b6788eedf6e051f7e');
 			const randomImg = await axios.get(
-				'https://dog.ceo/api/breeds/image/random'
+				'http://openweathermap.org/img/w/'
 			);
 			//alert(Object.keys(dogBreeds));
 			return {
-				tableDogBreeds: dogBreeds.data.message,
-				tableDogKeys: Object.keys(dogBreeds.data.message),
-				dogImageUrl: randomImg.data.message,
+				tableDogBreeds: dogBreeds.data.weather,
+				tableDogKeys: Object.keys(dogBreeds.data.weather),
+				dogImageUrl: randomImg.data.weather,
 			};
 		},
 		methods: {
