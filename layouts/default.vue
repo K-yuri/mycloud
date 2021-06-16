@@ -44,6 +44,9 @@
                 <li>
                     <nuxt-link to="/shoppingmall"><i class="fas fa-file-signature"></i>&nbsp;쇼핑몰 목록</nuxt-link>
                 </li>
+                <li>
+                    <nuxt-link to="/clothesChart"><i class="fas fa-file-signature"></i>&nbsp;의상 통계</nuxt-link>
+                </li>
             </ul>
         </nav>
     <nuxt/>

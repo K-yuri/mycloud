@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add axios module"
+git commit -m "add Toast UI Chart"
 git push -u origin master
