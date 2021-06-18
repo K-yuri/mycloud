@@ -18,6 +18,8 @@ export default function(elName) {
         chart: { width: 700, height: 400 },
     };
 
+    if (chartType == 'line') toastui
+
     toastui.chart.barChart({ el, data, options });
     return true;
 }

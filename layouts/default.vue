@@ -3,7 +3,7 @@
     <nav class="breadcrumb" aria-label="breadcrumbs">
   <ul>
     <li>
-      <a href="#">
+      <a href="https://weatherclothes.netlify.app/">
         <span class="icon is-small">
           <i class="fas fa-home" aria-hidden="true"></i>
         </span>
@@ -11,7 +11,7 @@
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="https://www.weather.go.kr/w/index.do">
         <span class="icon is-small">
           <i class="fas fa-cloud" aria-hidden="true"></i>
         </span>
@@ -19,7 +19,7 @@
       </a>
     </li>
     <li>
-      <a href="#">
+      <a href="https://blog.naver.com/worldcleaning1">
         <span class="icon is-small">
           <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
         </span>
@@ -27,7 +27,7 @@
       </a>
     </li>
     <li class="is-active">
-      <a href="#">
+      <a href="https://www.facebook.com/">
         <span class="icon is-small">
           <i class="fas fa-thumbs-up" aria-hidden="true"></i>
         </span>
@@ -45,14 +45,14 @@
                     <nuxt-link to="/shoppingmall"><i class="fas fa-file-signature"></i>&nbsp;쇼핑몰 목록</nuxt-link>
                 </li>
                 <li>
-                    <nuxt-link to="/clothesChart"><i class="fas fa-file-signature"></i>&nbsp;의상 통계</nuxt-link>
+                    <nuxt-link to="/clothesChart"><i class="fas fa-file-signature"></i>&nbsp;의류 통계</nuxt-link>
                 </li>
             </ul>
         </nav>
     <nuxt/>
     <footer class="footer">
       <div class="content has-text-centered">
-        <i class="fas fa-copyright"></i> 2020-2021, 모든 저작권은 월드클리닝에 있습니다.
+        <i class="fas fa-copyright"></i> 2020-2021, 모든 저작권은  있습니다.
       </div>
     </footer>
   </div>

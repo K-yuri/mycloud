@@ -24,7 +24,14 @@
 						<template v-for="pos in tableDogKeys.length">
 							<tr :key="pos">
 								<td>{{ pos }}</td>
-								<td>{{ tableDogKeys[pos - 1].toUpperCase() }}</td>
+								<td>
+									<button
+										:class="`button ${colors[(pos - 1) % colorSize]} is-light`"
+										@click="submitDogName(tableDogKeys[pos - 1])"
+									>
+										{{ tableDogKeys[pos - 1].toUpperCase() }}
+									</button>
+								</td>
 								<td>
 									<span
 										class="tag is-black"
@@ -62,9 +69,9 @@
 					<div class="message-header">오늘의 강아지</div>
 					<div class="message-body">
 						<div class="content">
-							오늘 소개할 강아지를 소개합니다.
+							지금 나오는 강아지를 알아보세요.
 							<button class="button is-warning" @click="showDogName">
-								강아지 이름?
+								강아지 품종?
 							</button>
 						</div>
 						<figure class="image container">
@@ -74,22 +81,37 @@
 				</article>
 			</div>
 		</section>
-    </div>
+	</div>
 </template>
-
 <script>
 	import axios from 'axios';
 	export default {
+		data() {
+			const colors = [
+				'is-white',
+				'is-primary',
+				'is-link',
+				'is-info',
+				'is-success',
+				'is-warning',
+				'is-danger',
+			];
+			return {
+				dogNameField: 'dogName',
+				colors: colors,
+				colorSize: colors.length,
+			};
+		},
 		async asyncData() {
-			const dogBreeds = await axios.get('http://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=28982191e068cf8b6788eedf6e051f7e');
+			const dogBreeds = await axios.get('https://dog.ceo/api/breeds/list/all');
 			const randomImg = await axios.get(
-				'http://openweathermap.org/img/w/'
+				'https://dog.ceo/api/breeds/image/random'
 			);
 			//alert(Object.keys(dogBreeds));
 			return {
-				tableDogBreeds: dogBreeds.data.weather,
-				tableDogKeys: Object.keys(dogBreeds.data.weather),
-				dogImageUrl: randomImg.data.weather,
+				tableDogBreeds: dogBreeds.data.message,
+				tableDogKeys: Object.keys(dogBreeds.data.message),
+				dogImageUrl: randomImg.data.message,
 			};
 		},
 		methods: {
@@ -97,6 +119,11 @@
 				let urlArray = this.dogImageUrl.split('/');
 				let dogName = urlArray[urlArray.length - 2].toUpperCase();
 				alert('저는 ' + dogName + '입니다.');
+			},
+			submitDogName(dogName) {
+				this.$router.push(
+					'/studyOneDog?' + this.dogNameField + '=' + dogName.toLowerCase()
+				);
 			},
 		},
 	};
