@@ -86,45 +86,18 @@
 <script>
 	import axios from 'axios';
 	export default {
-		data() {
-			const colors = [
-				'is-white',
-				'is-primary',
-				'is-link',
-				'is-info',
-				'is-success',
-				'is-warning',
-				'is-danger',
-			];
-			return {
-				dogNameField: 'dogName',
-				colors: colors,
-				colorSize: colors.length,
-			};
-		},
 		async asyncData() {
-			const dogBreeds = await axios.get('https://dog.ceo/api/breeds/list/all');
-			const randomImg = await axios.get(
-				'https://dog.ceo/api/breeds/image/random'
-			);
-			//alert(Object.keys(dogBreeds));
+			const petStat = await axios.get('https://raw.githubusercontent.com/SonYB98/MyCloud1/master/assets/petStat.json');
+            //alert(Object.keys(petStat));
+            console.log(Object.keys(petStat.data.message));
 			return {
-				tableDogBreeds: dogBreeds.data.message,
-				tableDogKeys: Object.keys(dogBreeds.data.message),
-				dogImageUrl: randomImg.data.message,
+				tableStatus: petStat.data.message,
+                tableStatusKey: Object.keys(petStat.data.message),
+                tableStatus2: petStat.data.status,
+                tableStatus3: petStat.data.status2
+                
+                
 			};
-		},
-		methods: {
-			showDogName() {
-				let urlArray = this.dogImageUrl.split('/');
-				let dogName = urlArray[urlArray.length - 2].toUpperCase();
-				alert('저는 ' + dogName + '입니다.');
-			},
-			submitDogName(dogName) {
-				this.$router.push(
-					'/studyOneDog?' + this.dogNameField + '=' + dogName.toLowerCase()
-				);
-			},
-		},
+		}
 	};
 </script>
