@@ -9,6 +9,20 @@
 			</div>
 		</section>
 		<hr />
+    <section class="box">
+			<form @submit.prevent="submitShopName">
+				<div class="field">
+					<label class="label">의류</label>
+					<div class="control">
+						<input type="text" v-model="shopName" />
+						<button class="button is-link" type="submit">매장 찾기</button>
+					</div>
+					<p class="help is-success">
+						알아보고 싶은 매장의 이름을 입력하세요.
+					</p>
+				</div>
+			</form>
+		</section>
     <div class="container-fluid mt--7">
       <div class="card shadow border-0">
         <div
@@ -22,6 +36,23 @@
     </div>
 	</div>
 </template>
+<script>
+	export default {
+		data() {
+			return {
+				shopNameField: 'dogName',
+				shopName: null,
+			};
+		},
+		methods: {
+			submitDogName() {
+				this.$router.push(
+					'/studyClothes?' + this.shopNameField + '=' + this.shopName
+				);
+			},
+		},
+	};
+</script>
 <script>
 import { Loader } from "google-maps";
 const loader = new Loader("AIzaSyDHWccUDRQNam53tac-qt22c6MOl6TKScI");
