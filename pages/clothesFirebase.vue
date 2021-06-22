@@ -30,11 +30,29 @@
                     </tbody>
                 </table>
             </div>
+            <div class="column">
+                <table class="table is-striped is=hoverable is-fullwidth">
+                    <tread>
+                        <tr>
+                            <th>번호</th>
+                            <th>액세서리 이름</th>
+                        </tr>
+                    </tread>
+                    <tbody>
+                        <template v-for="pos in acceessoryNames.lenght">
+                            <tr :key="pos">
+                                <td>{{pos}}</td>
+                                <td>{{acceessoryNames[pos-1]}}</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </div>
 </template>
 <script>
-import fbDb from '~/plugins/firebaseDB.js';
+import fbDb from '~/plugins/firebaseDb.js';
 export default {
     data() {
         return {clothesNames: [], acceessoryNames: [] };

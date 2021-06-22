@@ -56,7 +56,7 @@
 <script>
 import { Loader } from "google-maps";
 const loader = new Loader("AIzaSyDHWccUDRQNam53tac-qt22c6MOl6TKScI");
-import Firebase from '~/plugins/firebaseDB.js';
+import Firebase from '~/plugins/firebaseDb.js';
 
 let app = Firebase.initializeApp(firebaseConfig);
 let db = app.database();
