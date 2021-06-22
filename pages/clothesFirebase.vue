@@ -52,7 +52,7 @@
     </div>
 </template>
 <script>
-import fbDb from '~/plugins/firebaseDb.js';
+import fbDb from '~/plugins/firebaseDb';
 export default {
     data() {
         return {clothesNames: [], acceessoryNames: [] };
