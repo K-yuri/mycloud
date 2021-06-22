@@ -2,9 +2,9 @@
 	<div>
 		<section class="hero is-danger">
 			<div class="hero-body">
-				<p class="title"><i class="fas fa-dog"></i>의류 상식</p>
+				<p class="title"><i class="fas fa-list-ul"/>의류 찾기</p>
 				<p class="subtile">
-					각 의류에 대해 알아봅시다.
+					주위에서 의류를 판매하는 매장을 찾아봅시다.
 				</p>
 			</div>
 		</section>
@@ -26,10 +26,10 @@
 					<label class="label">의류</label>
 					<div class="control">
 						<input type="text" v-model="dogName" />
-						<button class="button is-link" type="submit">알아보기</button>
+						<button class="button is-link" type="submit">매장 찾기</button>
 					</div>
 					<p class="help is-success">
-						알아보고 싶은 의류의 이름을 입력하세요.
+						알아보고 싶은 매장의 이름을 입력하세요.
 					</p>
 				</div>
 			</form>
