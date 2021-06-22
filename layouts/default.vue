@@ -3,14 +3,6 @@
     <nav class="breadcrumb" aria-label="breadcrumbs">
   <ul>
     <li>
-      <a href="https://weatherclothes.netlify.app/">
-        <span class="icon is-small">
-          <i class="fas fa-home" aria-hidden="true"></i>
-        </span>
-        <span>HOME</span>
-      </a>
-    </li>
-    <li>
       <a href="https://www.weather.go.kr/w/index.do">
         <span class="icon is-small">
           <i class="fas fa-cloud" aria-hidden="true"></i>
@@ -39,10 +31,13 @@
         <nav class="breadcrumb">
             <ul>
                 <li>
+                    <nuxt-link to="/"><i class="fas fa-home"></i>&nbsp;HOME</nuxt-link>
+                </li>
+                <li>
                     <nuxt-link to="/clothesDesing"><i class="fas fa-file-signature"></i>&nbsp;옷 추천</nuxt-link>
                 </li>
                 <li>
-                    <nuxt-link to="/shoppingmall"><i class="fas fa-file-signature"></i>&nbsp;쇼핑몰 목록</nuxt-link>
+                    <nuxt-link to="/weatherClothes"><i class="fas fa-file-signature"></i>&nbsp;날씨와 옷</nuxt-link>
                 </li>
                 <li>
                     <nuxt-link to="/clothesChart"><i class="fas fa-file-signature"></i>&nbsp;의류 통계</nuxt-link>
@@ -58,7 +53,7 @@
     <nuxt/>
     <footer class="footer">
       <div class="content has-text-centered">
-        <i class="fas fa-copyright"></i> 2020-2021, 모든 저작권은  있습니다.
+        <i class="fas fa-copyright"></i> 2020-2021, 사이트 1860013 김유리 제작.
       </div>
     </footer>
   </div>

@@ -6,7 +6,7 @@
                     <i class="fas fa-temperature-high"/>옷차림 <i class="fas fa-list-ul"/>추천
                 </p>
                 <p class="subtitle">
-                간편하게 옷을 추천받아보세요.
+                간편하게 다양한 옷을 추천받아보세요.
                 </p>
             </div>
         </section>
