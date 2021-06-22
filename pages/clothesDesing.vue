@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import clothes from "~/assets/clothes.json";
+import clothes from "~/assets/clothes.JSON";
 
 export default {
     data() {
