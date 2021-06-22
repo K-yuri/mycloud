@@ -22,11 +22,11 @@
       </div>
     </div>
 		<section class="box">
-			<form @submit.prevent="submitDogName">
+			<form @submit.prevent="submitShopName">
 				<div class="field">
 					<label class="label">의류</label>
 					<div class="control">
-						<input type="text" v-model="dogName" />
+						<input type="text" v-model="shopName" />
 						<button class="button is-link" type="submit">알아보기</button>
 					</div>
 					<p class="help is-success">
@@ -37,23 +37,6 @@
 		</section>
 	</div>
 </template>
-<script>
-	export default {
-		data() {
-			return {
-				dogNameField: 'dogName',
-				dogName: null,
-			};
-		},
-		methods: {
-			submitDogName() {
-				this.$router.push(
-					'/studyClothes?' + this.dogNameField + '=' + this.dogName
-				);
-			},
-		},
-	};
-</script>
 <script>
 import { Loader } from "google-maps";
 const loader = new Loader("AIzaSyDVPerHjZIJeBli_U_naMrf4mRig8qsT3I");

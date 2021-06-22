@@ -1,3 +1,3 @@
 git add --all
-git commit -m "add google map page"
+git commit -m "fix firebase"
 git push -u origin master
