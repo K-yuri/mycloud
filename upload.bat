@@ -1,3 +1,3 @@
 git add --all
-git commit -m "fix google map"
+git commit -m "add clothes json"
 git push -u origin master
