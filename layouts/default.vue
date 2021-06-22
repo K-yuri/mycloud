@@ -42,11 +42,9 @@
                 <li>
                     <nuxt-link to="/clothesChart"><i class="fas fa-file-signature"></i>&nbsp;의류 통계</nuxt-link>
                 </li>
+                
                 <li>
-                    <nuxt-link to="/clothesFirebase"><i class="fas fa-file-signature"></i>&nbsp;의류 파베</nuxt-link>
-                </li>
-                <li>
-                    <nuxt-link to="/clothesStudy"><i class="fas fa-file-signature"></i>&nbsp;의류 상식</nuxt-link>
+                    <nuxt-link to="/clothesShop"><i class="fas fa-file-signature"></i>&nbsp;의류 매장 찾기</nuxt-link>
                 </li>
             </ul>
         </nav>

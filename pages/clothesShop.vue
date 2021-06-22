@@ -2,13 +2,12 @@
 	<div>
 		<section class="hero is-danger">
 			<div class="hero-body">
-				<p class="title"><i class="fas fa-dog"></i>의류 매장 정보</p>
+				<p class="title"><i class="fas fa-dog"></i>의류 상식</p>
 				<p class="subtile">
-					가까운 의류 매장의 위치를 찾아봅시다.
+					각 의류에 대해 알아봅시다.
 				</p>
 			</div>
 		</section>
-		<hr />
 		<hr />
     <div class="container-fluid mt--7">
       <div class="card shadow border-0">
@@ -22,21 +21,38 @@
       </div>
     </div>
 		<section class="box">
-			<form @submit.prevent="submitShopName">
+			<form @submit.prevent="submitDogName">
 				<div class="field">
 					<label class="label">의류</label>
 					<div class="control">
-						<input type="text" v-model="shopName" />
+						<input type="text" v-model="dogName" />
 						<button class="button is-link" type="submit">알아보기</button>
 					</div>
 					<p class="help is-success">
-						알아보고 싶은 의류 매장의 이름을 입력하세요.
+						알아보고 싶은 의류의 이름을 입력하세요.
 					</p>
 				</div>
 			</form>
 		</section>
 	</div>
 </template>
+<script>
+	export default {
+		data() {
+			return {
+				dogNameField: 'dogName',
+				dogName: null,
+			};
+		},
+		methods: {
+			submitDogName() {
+				this.$router.push(
+					'/studyClothes?' + this.dogNameField + '=' + this.dogName
+				);
+			},
+		},
+	};
+</script>
 <script>
 import { Loader } from "google-maps";
 const loader = new Loader("AIzaSyDVPerHjZIJeBli_U_naMrf4mRig8qsT3I");
@@ -67,11 +83,11 @@ export default {
       // Regular Map
       // const myLatlng = new google.maps.LatLng(40.748817, -73.985428);
       const myLatlng = new google.maps.LatLng(
-        36.32608511724399,
-		127.3386075463675
+        36.34397644068321, 
+        127.37407620541092
       );
       const mapOptions = {
-        zoom: 20,
+        zoom: 15,
         center: myLatlng,
         scrollwheel: false, // we disable de scroll over the map, it is a really annoing when you scroll through page
         disableDefaultUI: true, // a way to quickly hide all controls
@@ -126,7 +142,7 @@ export default {
 
         marker = new google.maps.Marker({
           position: newMaker,
-          title: "shop",
+          title: "hospital",
           icon: "https://cdn.glitch.com/37d9e42b-5b4d-4b17-9e77-c177a73cd5ec%2Fdasol.png?v=1621847826305",
         });
         marker.setMap(map);
@@ -135,3 +151,4 @@ export default {
   },
 };
 </script>
+<style></style>
