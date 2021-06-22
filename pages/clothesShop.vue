@@ -56,18 +56,8 @@
 <script>
 import { Loader } from "google-maps";
 const loader = new Loader("AIzaSyDHWccUDRQNam53tac-qt22c6MOl6TKScI");
-import Firebase from "firebase";
-// firebase init - add your own config here
-const firebaseConfig = {
-    apiKey: "AIzaSyDVPerHjZIJeBli_U_naMrf4mRig8qsT3I",
-    authDomain: "cloud-clothes.firebaseapp.com",
-    databaseURL: "https://cloud-clothes-default-rtdb.firebaseio.com",
-    projectId: "cloud-clothes",
-    storageBucket: "cloud-clothes.appspot.com",
-    messagingSenderId: "371062655392",
-    appId: "1:371062655392:web:2fb3438a59030dd439fcc5",
-    measurementId: "G-PCNMMGQ2P0"
-};
+import Firebase from '~/plugins/firebaseDB.js';
+
 let app = Firebase.initializeApp(firebaseConfig);
 let db = app.database();
 let locationRef = db.ref("location");
