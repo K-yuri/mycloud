@@ -142,7 +142,7 @@ export default {
 
         marker = new google.maps.Marker({
           position: newMaker,
-          title: "hospital",
+          title: "shop",
           icon: "https://cdn.glitch.com/37d9e42b-5b4d-4b17-9e77-c177a73cd5ec%2Fdasol.png?v=1621847826305",
         });
         marker.setMap(map);
