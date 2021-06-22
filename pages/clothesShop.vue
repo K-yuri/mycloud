@@ -9,18 +9,7 @@
 			</div>
 		</section>
 		<hr />
-    <div class="container-fluid mt--7">
-      <div class="card shadow border-0">
-        <div
-          id="map"
-          class="map-canvas"
-          data-lat="40.748817"
-          data-lng="-73.985428"
-          style="height: 600px"
-        ></div>
-      </div>
-    </div>
-		<section class="box">
+    <section class="box">
 			<form @submit.prevent="submitDogName">
 				<div class="field">
 					<label class="label">의류</label>
@@ -34,6 +23,17 @@
 				</div>
 			</form>
 		</section>
+    <div class="container-fluid mt--7">
+      <div class="card shadow border-0">
+        <div
+          id="map"
+          class="map-canvas"
+          data-lat="40.748817"
+          data-lng="-73.985428"
+          style="height: 600px"
+        ></div>
+      </div>
+    </div>
 	</div>
 </template>
 <script>
