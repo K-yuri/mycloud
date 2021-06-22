@@ -55,7 +55,7 @@
 </script>
 <script>
 import { Loader } from "google-maps";
-const loader = new Loader("AIzaSyDVPerHjZIJeBli_U_naMrf4mRig8qsT3I");
+const loader = new Loader("AIzaSyDHWccUDRQNam53tac-qt22c6MOl6TKScI");
 import Firebase from "firebase";
 // firebase init - add your own config here
 const firebaseConfig = {
