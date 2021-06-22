@@ -9,20 +9,6 @@
 			</div>
 		</section>
 		<hr />
-    <section class="box">
-			<form @submit.prevent="submitDogName">
-				<div class="field">
-					<label class="label">의류</label>
-					<div class="control">
-						<input type="text" v-model="dogName" />
-						<button class="button is-link" type="submit">매장 찾기</button>
-					</div>
-					<p class="help is-success">
-						알아보고 싶은 매장의 이름을 입력하세요.
-					</p>
-				</div>
-			</form>
-		</section>
     <div class="container-fluid mt--7">
       <div class="card shadow border-0">
         <div
@@ -56,8 +42,18 @@
 <script>
 import { Loader } from "google-maps";
 const loader = new Loader("AIzaSyDHWccUDRQNam53tac-qt22c6MOl6TKScI");
-import Firebase from '~/plugins/firebaseDb';
-
+import Firebase from "firebase";
+// firebase init - add your own config here
+const firebaseConfig = {
+    apiKey: "AIzaSyDVPerHjZIJeBli_U_naMrf4mRig8qsT3I",
+    authDomain: "cloud-clothes.firebaseapp.com",
+    databaseURL: "https://cloud-clothes-default-rtdb.firebaseio.com",
+    projectId: "cloud-clothes",
+    storageBucket: "cloud-clothes.appspot.com",
+    messagingSenderId: "371062655392",
+    appId: "1:371062655392:web:2fb3438a59030dd439fcc5",
+    measurementId: "G-PCNMMGQ2P0"
+};
 let app = Firebase.initializeApp(firebaseConfig);
 let db = app.database();
 let locationRef = db.ref("location");
