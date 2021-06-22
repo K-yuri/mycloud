@@ -17,7 +17,8 @@
         "firebase": "^4.8.0",
         "gmap": "^1.0.1",
         "google-maps": "^4.3.3",
-        "nuxt": "^2.0.0"
+        "nuxt": "^2.0.0",
+        "nuxt-gmaps": "^1.2.10"
     },
     "devDependencies": {
         "babel-eslint": "^10.0.1",
