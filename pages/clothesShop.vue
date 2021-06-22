@@ -20,6 +20,20 @@
         ></div>
       </div>
     </div>
+		<section class="box">
+			<form @submit.prevent="submitDogName">
+				<div class="field">
+					<label class="label">의류</label>
+					<div class="control">
+						<input type="text" v-model="dogName" />
+						<button class="button is-link" type="submit">매장 찾기</button>
+					</div>
+					<p class="help is-success">
+						알아보고 싶은 매장의 이름을 입력하세요.
+					</p>
+				</div>
+			</form>
+		</section>
 	</div>
 </template>
 <script>
